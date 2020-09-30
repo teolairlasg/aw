@@ -5,23 +5,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Documento</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <h1 style="color: red;">Enlaces</h1>
+    <h1>Enlaces</h1>
     <p><a href="https://www.google.com" title="Google">Ir a Google</a></p>
     <a href="http://www.iessierradeguara.com">Ir a la web del centro</a>
     <a href="./imagenes.html">Enlace a Imágenes</a>
     <a href="./capitulos.html">Enlace a Capítulos</a>
     <a href="./capitulos.html#cap2">Enlace al capítulo 2</a>
     <p lang="en">This is my website</p>
-    <iframe width="794" height="447" src="https://www.youtube.com/embed/Iqx1y6tpYRI" frameborder="0"
+    <h1>Vídeos</h1>
+    <iframe width="200px" src="https://www.youtube.com/embed/Iqx1y6tpYRI" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
-    <video controls>
+    <video controls width="200px">
         <source src="./vids/mov_bbb.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
+    <!-- ol para listas con números -->
+    <h1>Listas</h1>
+    <h2>Lista numerada</h2>
+    <ol>
+        <!-- li es para cada elemento de lista -->
+        <li>Uno</li>
+        <li>Dos</li>
+        <li>Tres</li>
+        <li>Cuatro</li>
+    </ol>
+    <!-- ul es para listas de viñetas -->
+    <h2>Lista de Viñetas</h2>
+    <ul>
+        <li>Uno</li>
+        <li>Dos</li>
+        <li>Tres</li>
+        <li>Cuatro</li>
+    </ul>
+    <!-- para hacer una lista anidada tengo que poner un ul/ol dentro de un li de otra lista -->
+    <h2>Lista Anidada</h2>
+    <h3>Ciclos de Informática</h3>
+    <ul>
+        <li>Ciclos de la tarde:</li>
+        <ul>
+            <li>SMR</li>
+            <ul><li>15 alumnos</li></ul>
+            <li>ASIR</li>
+            <ul><li>15 alumnos</li></ul>
+
+        </ul>
+        <li>Ciclos de la mañana:</li>
+        <ul>
+            <li>DAM</li>
+            <ul><li>15 alumnos</li></ul>
+
+        </ul>
+        </li>
+    </ul>
+
+
+
+
 </body>
 
 </html>

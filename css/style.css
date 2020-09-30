@@ -1,0 +1,23 @@
+body{
+    background-color: lightblue;
+    font-family: arial, sans-serif;
+}
+
+h1{
+    color: #94c5c5; 
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    background-color: ivory;
+}
+
+a:hover{
+    color: yellow;
+    background-color: teal;
+}
+
+li:hover{
+    font-weight: bolder;
+}
