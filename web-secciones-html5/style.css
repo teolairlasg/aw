@@ -1,0 +1,17 @@
+body{
+    background-color: bisque;
+}
+
+header{
+    background-color: lightcyan;
+}
+
+aside{
+    background-color: lightpink;
+}
+main{
+    background-color: lightsteelblue;
+}
+footer{
+    background-color: grey;
+}
