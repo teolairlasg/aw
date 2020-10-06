@@ -21,32 +21,47 @@ header{
     background-color: lightcyan;
 }
 
-aside{
+#aside1{
     padding-top: 20px;
     padding-bottom: 20px;
     position: absolute;
     left: 0;
     top: 80px;
     background-color: lightpink;
-    width: 20%;
-    display: inline-block;
+    width: 15%;
     padding-left: 1%;
     vertical-align: top;
-    bottom: 40px;
+    bottom: 0;
     overflow: auto;
+    border-right-style: solid;
+
 }
-main{
+
+#aside2{
     padding-top: 20px;
     padding-bottom: 20px;
     position: absolute;
     right: 0;
     top: 80px;
+    background-color: lightyellow;
+    width: 15%;
+    padding-left: 1%;
+    vertical-align: top;
+    bottom: 0;
+    overflow: auto;
+    border-left-style: solid;
+
+}
+
+main{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: absolute;
+    right: 15%;
+    top: 80px;
     bottom: 40px;
     background-color: lightsteelblue;
-    width: 80%;
-    display: inline-block;
-    border-left-style: solid;
-    border-width: 1px;
+    width: 70%;
     padding-left: 1%;
     overflow: auto;
 }
@@ -55,6 +70,9 @@ footer{
     position: absolute;
     bottom: 0;
     right: 0;
-    left: 0;
+    left: 15%;
     height: 40px;
+    border-top-style: solid;
+    text-align: center;
+    padding-top: 10px;
 }
