@@ -1,0 +1,69 @@
+*{
+    /* Margin 0 para todos los elementos */
+    margin: 0;
+    /* Los bordes y el padding cuentan en el ancho */
+    box-sizing: border-box;
+    /* Los bordes y el padding no cuentan en el ancho
+    box-sizing: content-box; */
+}
+
+header{
+/* color de fondo */
+    background-color: lightyellow;
+    /* Altura del elemento, tiene que ser un elemento de bloque y 
+    la especificaremos en pixeles o en vh */
+    height: 50px;
+    /* Position indica la posición del elemento con respecto
+    a sus elementos adyacentes
+    fixed, se mantiene en el mismo sitio aunque haya scroll
+    absolute, lo posicionamos a mano y no se tiene en cuenta
+    para los demás elementos
+    relative, es el valor por defecto, quiere decir que se posicionan
+    las cosas unas al lado de otras */
+    position: fixed;
+    /* cuando posicionamos de manera absolute o fixed
+    podemos decirle a cuánta distancia estará de los bordes
+    de la web top, bottom, left, right */
+    left: 0;
+    /* El ancho del elemento, normalmente usaremos
+    porcentajes */
+    width: 15%;
+}
+
+nav{
+    background-color: rgb(200, 195, 195);
+    height: 50px;
+    position: fixed;
+    right: 0;
+    width: 85%;
+    /* Esto es para subir o bajar elementos cuando se solapen
+    a modo de capas. Por defecto el valor es 0 así que 
+    si le ponemos 1 quiere decir que estará por encima
+    de los que estén a 0 */
+    z-index: 1;
+}
+
+aside{
+    background-color: lightsalmon;
+    position: fixed;
+    left: 0;
+    width: 15%;
+    top: 50px;
+    border-style: solid;
+    /* Calc nos permite hacer cálculos con
+     medidas diferentes relativas y absolutas*/
+    height: calc(100vh - 50px);
+    overflow: auto;
+}
+
+main{
+    background-color: lightskyblue;
+    position: absolute;
+    right: 0;
+    width: 85%;
+    top: 50px;
+    /* min-height nos permite especificar una altura 
+    mínima para los elementos, por si acaso el contenido
+    no es lo suficientemente grande; */
+    min-height: calc(100vh - 50px);
+}
