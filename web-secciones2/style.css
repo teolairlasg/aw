@@ -5,6 +5,7 @@
     box-sizing: border-box;
     /* Los bordes y el padding no cuentan en el ancho
     box-sizing: content-box; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header{
@@ -34,11 +35,13 @@ header{
 
 nav{
     background-color: rgb(200, 195, 195);
-    padding-top: 15px;
+    padding-top: 7px;
+    padding-right: 7px;
     height: 50px;
     position: fixed;
     right: 0;
     width: 85%;
+    text-align: end;
     /* Esto es para subir o bajar elementos cuando se solapen
     a modo de capas. Por defecto el valor es 0 así que 
     si le ponemos 1 quiere decir que estará por encima
@@ -72,3 +75,57 @@ main{
     no es lo suficientemente grande; */
     min-height: calc(100vh - 50px);
 }
+/* Todos los enlaces hijos directos de aside */
+aside > a{
+    display: block;
+    background-color: yellow;
+    border-style: solid;
+    border-color: yellow;
+    border-width: 2px;
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 40px;
+    text-decoration: none;
+}
+
+aside > a:hover{
+    border-color: black;
+}
+
+aside > a:visited{
+    color: blue;
+}
+
+aside > h1{
+    text-align: center;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    padding-bottom: 10px;
+
+}
+
+nav > a{
+    display: inline-block;
+    width: 151px;
+    background-color: yellow;
+    border-style: solid;
+    border-color: yellow;
+    border-width: 2px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 40px;
+    text-decoration: none;
+}
+
+nav > a:hover{
+    border-color: black;
+}
+
+nav > a:visited{
+    color: blue;
+}
+
+
+
