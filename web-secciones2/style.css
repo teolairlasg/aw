@@ -9,6 +9,8 @@
 
 header{
 /* color de fondo */
+    text-align: center;
+    padding-top: 15px;
     background-color: lightyellow;
     /* Altura del elemento, tiene que ser un elemento de bloque y 
     la especificaremos en pixeles o en vh */
@@ -24,7 +26,7 @@ header{
     /* cuando posicionamos de manera absolute o fixed
     podemos decirle a cuánta distancia estará de los bordes
     de la web top, bottom, left, right */
-    left: 0;
+    
     /* El ancho del elemento, normalmente usaremos
     porcentajes */
     width: 15%;
@@ -32,6 +34,7 @@ header{
 
 nav{
     background-color: rgb(200, 195, 195);
+    padding-top: 15px;
     height: 50px;
     position: fixed;
     right: 0;
@@ -44,12 +47,14 @@ nav{
 }
 
 aside{
+    padding: 10px;
     background-color: lightsalmon;
     position: fixed;
     left: 0;
     width: 15%;
     top: 50px;
-    border-style: solid;
+    border-right-style: solid;
+    border-width: 1px;
     /* Calc nos permite hacer cálculos con
      medidas diferentes relativas y absolutas*/
     height: calc(100vh - 50px);
