@@ -11,7 +11,7 @@
 header{
 /* color de fondo */
     text-align: center;
-    padding-top: 15px;
+    padding-top: 5px;
     background-color: lightyellow;
     /* Altura del elemento, tiene que ser un elemento de bloque y 
     la especificaremos en pixeles o en vh */
@@ -78,23 +78,30 @@ main{
 /* Todos los enlaces hijos directos de aside */
 aside > a{
     display: block;
+    margin: 10px;
+}
+
+nav > a{
+    display: inline-block;
+    width: 151px;
+}
+
+nav>a,aside>a{
     background-color: yellow;
     border-style: solid;
     border-color: yellow;
     border-width: 2px;
     text-align: center;
     padding: 5px;
-    margin: 10px;
     border-radius: 40px;
     text-decoration: none;
 }
 
-aside > a:hover{
-    border-color: black;
-}
-
-aside > a:visited{
-    color: blue;
+aside>p{
+    text-align: right;
+    border-top-style: solid;
+    border-top-width: 1px;
+    padding-top: 2px;
 }
 
 aside > h1{
@@ -105,27 +112,48 @@ aside > h1{
     padding-bottom: 10px;
 
 }
-
-nav > a{
-    display: inline-block;
-    width: 151px;
-    background-color: yellow;
-    border-style: solid;
-    border-color: yellow;
-    border-width: 2px;
-    text-align: center;
-    padding: 5px;
-    border-radius: 40px;
-    text-decoration: none;
-}
-
-nav > a:hover{
+/* Cuando el ratón esté por encima del elemento.
+Pseudo clase :hover */
+aside > a:hover, nav > a:hover{
     border-color: black;
 }
-
-nav > a:visited{
+/* En el momento de hacer click. Pseudoclase :active */
+aside > a:active, nav > a:active{
+    border-color: white;
+}
+/* Cuando ya lo haya visitado. Pseudclase :visited */
+aside > a:visited, nav > a:visited{
     color: blue;
 }
 
+main{
+/*  Equivalente a lo de abajo */
+/*
+    padding-top: 2vh;
+    padding-right: 2%;
+    padding-bottom: 1vh;
+    padding-left: 2%;
+*/
+    padding: 2vh 2% 1vh 2%;
 
 
+}
+
+header{
+    /* border-style: solid; */
+    /* Esto significa arriba 5px izda y dcha 1px y abajo 2px */
+    /* border-width: 5px 1px 2px; */
+    /* border-color: red; */
+}
+
+header img {
+    height: 40px;
+}
+/* 
+#video_oculto {
+    display: none;
+}
+
+main:hover > #video_oculto{
+    display: inline;
+} */
