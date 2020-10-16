@@ -67,6 +67,7 @@ aside{
 }
 
 main{
+    overflow: auto;
     background-color: lightskyblue;
     position: absolute;
     left: 0;
@@ -75,7 +76,7 @@ main{
     /* min-height nos permite especificar una altura 
     mínima para los elementos, por si acaso el contenido
     no es lo suficientemente grande; */
-    min-height: calc(100vh - 150px);
+    height: calc(100vh - 150px);
 }
 /* Todos los enlaces hijos directos de aside */
 aside > a{
@@ -101,9 +102,12 @@ nav>a,aside>a{
 
 footer{
     position: absolute;
+    width: 100%;
     bottom: 0;
     height: 50px;
     padding-top: 2px;
+    z-index: 1;
+    background-color: ivory;
 }
 
 aside > h1{
