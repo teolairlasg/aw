@@ -1,0 +1,16 @@
+input{
+    display: block;
+}
+
+input[type="radio"], input[type="checkbox"]{
+    display: inline;
+}
+
+a[href="https://www.google.com"]{
+    
+}
+
+
+input[value]{
+    margin: 5px;
+}
