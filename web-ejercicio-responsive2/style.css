@@ -1,0 +1,53 @@
+/* Todos los elementos */
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Versión móvil */
+@media (max-width: 400px){
+    header{
+        background-color: khaki;
+        height: 50px;
+        width: 100%;
+    }
+    aside{
+        width: 50px;
+        display: inline-block;
+        height: calc( 100vh - 100px );
+    }
+
+
+    aside > a{
+        display: block;
+        width: 100%;
+    }
+
+    aside > a > img{
+        width: 90%;
+        display: block;
+        margin: auto;
+    }
+    aside > a > p{
+        display: none;
+    }
+
+
+    main{
+        width: calc( 100% - 60px );
+        display: inline-block;
+        height: calc( 100vh - 100px );
+        /* float: right; */
+    }
+}
+
+
+
+
+
+/* Versión de escritorio */
+@media (min-width: 401px){
+    header{
+        background-color: lightgrey;
+    }
+}

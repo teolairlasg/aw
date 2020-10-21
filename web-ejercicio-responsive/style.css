@@ -45,7 +45,7 @@ nav, main{
 }
 
 /* Versión de escritorio */
-@media (min-width: 480px){
+@media (min-width: 481px){
     nav{
         top: 0;
         height: 50px;
