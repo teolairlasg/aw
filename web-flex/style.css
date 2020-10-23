@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lemonchiffon;
+    margin: 0;
+}
+
+div {
+    background-color: lightblue;
+    padding: 5px;
+    flex-basis: 10%;
+    height: 200px;
+    order: 5;
+}
+
+div:nth-of-type(4){
+    font-size: 2em;
+    order: 1;
+    flex-basis: 30%;
+}
+div:nth-of-type(5){
+    order: 2;
+    align-self: flex-end;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
