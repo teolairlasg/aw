@@ -1,6 +1,7 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
@@ -20,6 +21,25 @@ header, nav, aside, main, footer{
  nav{
     height: 40px;
     padding: 8.5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav>a{
+    padding: 5px;
+    background-color: darkcyan;
+    border-radius: 3px;
+    flex-basis: 17%;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border: 1px solid darkcyan;
+}
+
+nav>a:hover{
+    background-color: white;
+    color: darkcyan;
 }
 
 footer{
@@ -77,5 +97,8 @@ header{
     }
     main{
         height: calc( 100vh - 50px - 40px - 50px );
+    }
+    nav>a{
+        width: 120px;
     }
  }
