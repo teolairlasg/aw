@@ -1,0 +1,32 @@
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul ul{
+    display: none;
+    position: relative;
+    background-color: tomato;
+    top: 8px;
+}
+
+ul>li{
+    background-color: darkgray;
+    list-style: none;
+    width: 100px;
+    padding: 5px;
+    margin: 0;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+li:hover > ul{
+    display: block;
+}
+
+ul>li>ul>li{
+    border: none;
+    background-color: unset;
+}

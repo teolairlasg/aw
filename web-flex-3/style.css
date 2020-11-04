@@ -18,6 +18,11 @@ header, nav, aside, main, footer{
     flex-basis: 100%;
  }
 
+
+ main>p{
+     hyphens: auto;
+ }
+
  nav{
     height: 40px;
     padding: 8.5px;
@@ -40,6 +45,7 @@ nav>a{
 nav>a:hover{
     background-color: white;
     color: darkcyan;
+    transform: rotateZ(2deg);
 }
 
 footer{
