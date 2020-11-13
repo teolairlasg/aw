@@ -45,9 +45,29 @@ let clase={
     "radiadores": 2,
     "alumnos": { 
         "fila1": ["Fernando", "Miguel", "Banu", "Xavier"],
-        "fila2": ["Sergio", "Ginel", "Luis"],
+        "fila2": ["Sergio", "Ginel", "Luis", ["Juan", "Pedro"]],
         "fila3": ["Iván"]
     }
 }
 
 document.getElementById("parrafo").innerHTML = clase.alumnos.fila2[1];
+document.getElementById("parrafo").innerHTML = clase.alumnos.fila2[3][0];
+
+let matriz = [
+    [1,2,3,4],
+    [5,6,7,8],
+    [9,10,11,12]
+]
+
+let tablero = {
+    "A": ["T","C","A","Rn","Ry","A","C","T"],
+    "B": ["P","P","P","P","P","P","P","P"],
+}
+
+// Acceder a "Rn"
+tablero.A[3]
+
+let reinaBlanca = { 
+    "viva": true,
+    "posicion": ["a",4]
+}
