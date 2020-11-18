@@ -17,8 +17,31 @@ function anyadirElemento(textoTarea) {
     let listaTareas = document.getElementById("listaTareas");
     //le añado un elemento de lista con el texto
     // del parámetro textoTarea
+    console.log(listaTareas);
     listaTareas.innerHTML += "<li>" + textoTarea + "</li>";
 
     //Esto es equivalente
     //listaTareas.innerHTML = listaTareas.innerHTML + "<li>" + textoTarea + "</li>";
+}
+
+function borrarTarea() {
+    //usar prompt para pedir al usuario un número de tarea.
+    let numTarea = prompt("Escribe el número de la tarea que quieres borrar");
+    
+    // capturo la lista de tareas.
+    let lTareas = document.getElementById("listaTareas");
+    //comprobar que el número de tarea es válido
+    if ( numTarea >= 1 && numTarea <= lTareas.children.length ) {
+        //borrar de la lista de tareas el elemento número
+        //n-1, donde n es el valor que me ha pasado el
+        // usuario.
+        numTarea = numTarea - 1; //numTarea--; numTarea-=1;
+
+        //capturo el elemento que quiero borrar.
+        let eTareaBorrar = lTareas.children[numTarea];
+        //borro ese elemento de la lista.
+        lTareas.removeChild(eTareaBorrar);
+    }else{
+        alert("Número no válido.");
+    }
 }

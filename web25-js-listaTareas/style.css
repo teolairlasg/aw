@@ -1,0 +1,8 @@
+li > img{
+    margin-left: 5px;
+    width: 24px;
+}
+
+li{
+    display: flex;
+}
