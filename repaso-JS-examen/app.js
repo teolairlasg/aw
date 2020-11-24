@@ -25,7 +25,7 @@ let respuesta = prompt("¿Qué color estoy pensando? Tienes 2 intentos");
 if (respuesta == colorSolucion) {
     alert("has acertado");
 } else {
-    respuesta = prompt("¿Qué color estoy pensando? Tienes 1 intentos");
+    respuesta = prompt("¿Qué color estoy pensando? Tienes 1 intento");
     if (respuesta == colorSolucion) {
         alert("has acertado");
     }else{
