@@ -50,6 +50,9 @@ ul{
     padding: 50px;
 }
 
+tfoot>tr>td{
+    text-align: end;
+}
 
 /*  Versión para escritorio > 500px */
 
