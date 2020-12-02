@@ -7,7 +7,8 @@ while (i < ls.children.length) {
     //acceder al contendio del elemento children[]
     let hijo = ls.children[i];
     //Añadirle un punto (concatenamos con +);
-    hijo.innerHTML += ".";//equivalente a hijo.innerHTML = hijo.innerHTML+"."
+    hijo.innerHTML += ".";
+    //equivalente a hijo.innerHTML = hijo.innerHTML+"."
     i++; //incrementamos la variable
     //Finalizamos el bucle
 }
@@ -51,20 +52,30 @@ let artistas = ["Amaral",
 // |---|-------------------|
 // | 3 | El canto del loco |
 //  ......................
-
+let tabla = document.getElementById("tabla");
 //iteramos por array artistas con un for
-
-//para cada valor de i 
+for (let i = 0; i < artistas.length; i++) {
+/* // esto es un chapucilla, pero funciona
+let fila="<tr><td>"+(i+1)+"</td><td>"+artistas[i]+"</td></tr>";
+tabla.innerHTML+=fila;
+*/
 // creamos un tr
-
-// creamos un td y le ponemos de contenido i+1
-
-// creamos otro td y le ponemos de contenido el artista que toque
-
-// añadimos los dos td al elemento tr que hemos creado.
-
-// añadimos el elemento tr a la tabla "tabla".
-
+let fila = document.createElement("tr");
+// creamos un td para la celda del número
+let celda1 = document.createElement("td");
+// creamos un td para la celda del artista
+let celda2 = document.createElement("td");
+//rellenamos la celda del número con el índice
+celda1.innerHTML = i+1;
+//rellenamos la celda del artista con el artista que toca
+celda2.innerHTML = artistas[i];
+//añadimos a la fila la celda del número con appendChild
+fila.appendChild(celda1);
+//añadimos a la fila la celda del artista con appendChild
+fila.appendChild(celda2);
+//añadimos la fila a la tabla.
+tabla.appendChild(fila);
+}
 //final del bucle
 
 
