@@ -1,0 +1,15 @@
+#parrafo1 { 
+    color: red;
+}
+
+.verde{
+    color: green;
+}
+
+p{
+    color: blue;
+}
+
+.oculto{
+    display: none;
+}
