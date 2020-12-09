@@ -4,15 +4,13 @@ let ultimaPulsacion = "";
 function moverBola(evento) {
     let posX = bola.x;
     let posY = bola.y;
-    
+
     if (ultimaPulsacion == evento.key) {
         vel+=1;
     }else{
         vel=5;
     }
-    ultimaPulsacion = evento.key;
-    //Ancho máximo 800
-    //Alto máximo 600
+    ultimaPulsacion = evento.key;s
     console.log(evento.key);
     if (evento.key == "ArrowUp") {
         if( posY > 0 ){
