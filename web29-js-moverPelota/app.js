@@ -18,7 +18,7 @@ function moverBola(evento) {
         }
     }
     else if (evento.key == "ArrowDown") {
-        if (posY < (window.innerHeight-150)) { //600 menos el ancho de la bola
+        if (posY < (window.innerHeight-150)) { // nos aseguramos de que no se sale
             bola.style.top = posY + vel + "px";    
         }
     }
@@ -28,7 +28,7 @@ function moverBola(evento) {
         }
     }
     else if (evento.key == "ArrowRight") {
-        if (posX < (window.innerWidth-150)) { //800 menos el ancho de la bola
+        if (posX < (window.innerWidth-150)) { //nos aseguramos de que no se sale
             bola.style.left = posX + vel + "px";    
         }
     }
