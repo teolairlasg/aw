@@ -1,5 +1,5 @@
 {
-  "name": "web-31-node",
+  "name": "web-32-node2",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,7 +9,6 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {},
   "devDependencies": {
     "nodemon": "^2.0.7"
   }

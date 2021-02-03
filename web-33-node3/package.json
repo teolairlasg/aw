@@ -1,15 +1,13 @@
 {
-  "name": "web-31-node",
+  "name": "web-33-node3",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon index.js",
-    "start": "node index.js"
+    "test": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {},
   "devDependencies": {
     "nodemon": "^2.0.7"
   }

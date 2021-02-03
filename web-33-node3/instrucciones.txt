@@ -1,0 +1,9 @@
+1-Crear carpeta web-33-node3
+2-Inicializar el proyecto con npm
+3-Instalar nodemon como dependencia de desarrollo
+4-Modificar el script test para que llame a nodemon index.js
+5-Crear el fichero index.js dentro de la carpeta del proyecto
+6-En el index.js: Crear una variable con un valor e imprimirla por consola
+7-Ejecutar npm run test (o simplemente npm test).
+8-Cambiar el valor de la variable y guardar el fichero index.js
+¿Se ha reejecutado el archivo?
