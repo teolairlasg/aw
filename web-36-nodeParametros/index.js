@@ -5,7 +5,8 @@ const puerto = 3000;
 let datos = {
     "juan": "Juan Martínez",
     "manuel": "Manuel Jiménez",
-    "paco": "Francisco Rodríguez"
+    "paco": "Francisco Rodríguez",
+    "silvia": "Silvia González"
 }
 
 let usuarios = {
@@ -19,8 +20,6 @@ let usuarios = {
     }
 }
 
-
-
 app.get('/saluda/:nombre', function (req, res) {
     let nom = req.params.nombre;
     res.send('Hola ' + datos[nom]);
@@ -32,12 +31,15 @@ app.get('/despide/:nombre', function (req, res) {
     res.send('Adiós ' + datos[nom]);
 });
 
+app.get('/usuario/:numUsuario', function (req, res) {
+    let num = req.params.numUsuario;
+    let etiqueta = "user"+num;
+    let respuesta = "Nombre: "+usuarios[etiqueta].nombre+" E-mail: "+usuarios[etiqueta].email;
+    res.send(respuesta);
 
-
+});
 
 app.listen(puerto, iniciaServidor());
 function iniciaServidor() {
     console.log("Servidor en http://localhost:" + puerto);
 }
-
-
