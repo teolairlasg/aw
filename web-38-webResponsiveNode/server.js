@@ -8,5 +8,5 @@ app.use(express.static(rutaPublic));
 app.listen(port, serverStart());
 
 function serverStart() {
-    console.log("Servidor iniciado en http://localhost:3000")
+    console.log("Servidor iniciado en http://localhost:"+port);
 }
