@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio ejs</title>
-</head>
+<%- include('head',{ title: 'Inicio' }) %>
 <body>
-    ola ke ase <%= nombre %>
+    <%- include('header') %>
+    <ul><li><%= nombre %></li></ul>
 </body>
 </html>
