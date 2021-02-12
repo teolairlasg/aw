@@ -1,5 +1,4 @@
-Creación de un sitio en node
-con plantillas EJS
+Creación de un sitio en node con plantillas EJS
 
 Creamos la carpeta de nuestro proyecto web-39-ejercicio
 
@@ -28,3 +27,5 @@ La web deberá renderizar index.ejs cuando accedamos a la ruta /
 http://localhost:3000/
 
 En index.ejs debemos poner un documento HTML
+
+Todo lo de la carpeta public debe ser accesible mediante express static
