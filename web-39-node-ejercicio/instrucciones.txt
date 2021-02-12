@@ -1,0 +1,30 @@
+Creación de un sitio en node
+con plantillas EJS
+
+Creamos la carpeta de nuestro proyecto web-39-ejercicio
+
+Creamos la siguiente jerarquía de carpetas:
+web-39-ejercicio/
+  app/
+    views/
+      index.ejs
+    server.js <-- Aquí irá el código
+  public/
+    style.css
+
+Inicializamos el proyecto:
+npm init
+
+Establecemos el punto de entrada en app/server.js
+
+Establecemos el script test como 'nodemon app/server.js'
+
+Instalamos las librerías necesarias mediante: 
+ npm install <libreria>
+y las de desarrollo con
+ npm install <libreria> -D
+
+La web deberá renderizar index.ejs cuando accedamos a la ruta /
+http://localhost:3000/
+
+En index.ejs debemos poner un documento HTML
