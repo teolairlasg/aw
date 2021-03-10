@@ -16,7 +16,8 @@ npm init
 
 Establecemos el punto de entrada en app/server.js
 
-Establecemos el script test como 'nodemon app/server.js'
+Establecemos el script test como: 
+nodemon app/server.js
 
 Instalamos las librerías necesarias mediante: 
  npm install <libreria>

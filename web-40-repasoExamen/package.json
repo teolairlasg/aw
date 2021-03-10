@@ -1,0 +1,19 @@
+{
+  "name": "web-40-repasoexamen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app/server.js",
+  "scripts": {
+    "test": "nodemon app/server.js",
+    "start": "node app/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}
