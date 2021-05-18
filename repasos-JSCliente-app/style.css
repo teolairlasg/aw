@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    font-family: sans-serif;
+    font-size: 1.1em;
+}
+
+header {
+    flex-grow: 0;
+    background-color: antiquewhite;
+    padding: 5px;
+    display: flex;
+}
+
+header>h1 {
+    flex-grow: 1;
+}
+
+header>img {
+    border-radius: 20%;
+    border-width: 1px;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 3px;
+}
+
+#seccionTareas {
+    flex-grow: 1;
+    flex-shrink: 1;
+    /* hay que dar una altura para poder usar scroll auto */
+    height: 0px;
+    overflow-y: auto;
+}
+
+.tarea {
+    display: flex;
+    align-items: center;
+    height: 35px;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    padding: 2px;
+}
+
+.tarea:hover {
+    flex-grow: 1;
+    background-color: rgba(128, 128, 128, 0.404);
+}
+
+.tarea>span {
+    flex-grow: 1;
+
+}
+
+
+.tarea>img {
+    height: 100%;
+    padding: 5px;
+    display: none;
+}
+
+.tarea>img:hover {
+    cursor: pointer;
+}
+
+#seccionAgregar {
+    flex-grow: 0;
+    padding: 10px;
+    background-color: beige;
+}
+
+#seccionAgregar>p {
+    font-size: 0.8em;
+    padding: 2px;
+}
+
+#nuevaTarea {
+    display: flex;
+    gap: 10px;
+}
+
+#nuevaTarea>input {
+    flex-grow: 1;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#nuevaTarea>img {
+    max-width: 30px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#nuevaTarea>img:hover {
+    background-color: black;
+}

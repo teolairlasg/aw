@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+body>h3 {
+    text-align: center;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: large;
+}
+
+#caja {
+    background-color: black;
+    position: absolute;
+    /*
+    Posiciona la caja justo en el centro del navegador
+    */
+}

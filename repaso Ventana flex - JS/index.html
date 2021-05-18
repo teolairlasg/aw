@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repaso Tablas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <h3>Tabla</h3>
+    <table>
+        <thead>
+            <th colspan="3" class="impar">1</th>
+            <th class="par">2</th>
+        </thead>
+        <tbody>
+            <td colspan="2" class="impar">3</td>
+            <td class="par">4</td>
+            <td class="impar">5</td>
+        </tbody>
+        <tbody>
+            <td class="par">6</td>
+            <td colspan="2" class="impar">7</td>
+            <td class="par">8</td>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">Luis</td>
+            </tr>
+        </tfoot>
+    </table>
+    <button onclick="mostrarVentana()" id="boton1">
+        Haz click
+    </button>
+
+
+    <div id="velo"></div>
+    <div id="ventana">
+        <div>
+            <span>Pulsa el botón para cerrar esta ventana</span>
+        </div>
+        <button onclick="ocultarVentana()" id="boton2">
+            Cerrar
+        </button>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>

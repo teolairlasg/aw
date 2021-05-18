@@ -1,0 +1,9 @@
+La fila superior tiene que ser un thead y las celdas th
+Las filas inferiores tienen que ser un tbody y las celdas td
+Añadid vuestro nombre en una celda dentro de una fila dentro del tfoot.
+Usad CSS: 
+Las celdas de números pares tienen que ser de la clase par.
+Las celdas de números impares tienen que ser de la clase impar.
+Pintad las celdas pares de amarillo claro.
+Pintad las celdas impares de verde claro.
+Pintad el footer de negro, color de fuente blanco y poner el texto a la derecha.
