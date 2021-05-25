@@ -44,8 +44,12 @@ app.get('/:nom', function (req,res) {
 });
 
 // crea una ruta con un parámetro numérico
+// /doble/:numero
 // al renderizar la plantilla tienes que mostrar
 // el doble del valor que ha pasado el usuario
+
+// http://localhost:3000/doble/256
+// 512
 
 
 
